@@ -1,6 +1,6 @@
 #include "Vector3D.h"
 
-Vector3D add(Vector3D v, const Vector3D other)
+Vector3D add(const Vector3D v, const Vector3D other)
 {
 	Vector3D result;
     result.x = v.x + other.x;
@@ -9,7 +9,7 @@ Vector3D add(Vector3D v, const Vector3D other)
 	return result;
 }
 
-Vector3D sub(Vector3D v, const Vector3D other)
+Vector3D sub(const Vector3D v, const Vector3D other)
 {
 	Vector3D result;
     result.x = v.x - other.x;
@@ -22,7 +22,7 @@ double scalar_multiply(const Vector3D v, const Vector3D other)
 {
 	return v.x * other.x + v.y * other.y + v.z * other.z;
 }
-Vector3D cross_multiply(Vector3D v, const Vector3D other)
+Vector3D cross_multiply(const Vector3D v, const Vector3D other)
 {
     Vector3D result;
     result.x = v.y * other.z - v.z * other.y;

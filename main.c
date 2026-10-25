@@ -9,15 +9,15 @@ int main() {
     Vector3D sum = add(v1, v2);
     printf("Cложение\n");
     printf("{%.2f, %.2f, %.2f}\n", sum.x, sum.y, sum.z);
-    Vector3D diff = sub(v1, v2);
+    Vector3D v3 = sub(v1, v2);
     printf("вычитание\n");
-    printf("{%.2f, %.2f, %.2f}", diff.x, diff.y, diff.z);
+    printf("{%.2f, %.2f, %.2f}", v3.x, v3.y, v3.z);
     printf("\n");
     double dot = scalar_multiply(v1, v2);
     printf("Скалярное произведение\n");
     printf("%.2f\n", dot);
-    Vector3D cross = cross_multiply(v1, v2);
+    Vector3D v4 = cross_multiply(v1, v2);
     printf("Векторное произведение\n");
-    printf("{%.2f, %.2f, %.2f}\n", cross.x, cross.y, cross.z);
+    printf("{%.2f, %.2f, %.2f}\n", v4.x, v4.y, v4.z);
     return 0;
 }
